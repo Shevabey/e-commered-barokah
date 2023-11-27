@@ -82,6 +82,7 @@ const SingleProduct = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max">
             <div>
               <img src={image} alt="gambar" className="w-full  " />
+              {/* <img src="/images/products/gasHijau.jpg" alt="" /> */}
               <h2>{title}</h2>
             </div>
             <div className="mt-6">
