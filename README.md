@@ -1,8 +1,73 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# E-Commered Barokah
 
-Currently, two official plugins are available:
+This project aims to create an online shop platform called "Toko Barokah". This shop provides various products with a touch of beauty and the best quality. With this online shop platform, users can browse and buy products easily and provide solutions to shop position buyers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+   git clone https://github.com/Shevabey/e-commered-barokah.git
+```
+
+Go to the project directory
+
+```bash
+  cd e-commered-barokah
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Installation
+
+Install E-Commered Barokah with npm
+
+```bash
+npm create vite@latest
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install react-router-dom localforage match-sorter sort-by
+npm install react-icons --save
+
+```
+    
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run dev
+```
+
+
+## Documentation
+
+[tailwindcss](https://tailwindcss.com/docs/guides/vite)  
+[reactRouter](https://reactrouter.com/en/main/start/tutorial)  
+[reactIcon](https://react-icons.github.io/react-icons/)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at shevabey100@gmail.com
+
