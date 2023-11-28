@@ -103,7 +103,7 @@ const Products = () => {
 
           {/* sorting option */}
           <div className="flex justify-end items-center  rounded-sm">
-            <div className="bg-black p-2 ">
+            <div className="bg-blue-500 p-2 ">
               <FaFilter className="text-white h-4 w-4" />
             </div>
             <div>
@@ -111,7 +111,7 @@ const Products = () => {
                 id="sort"
                 onChange={(e) => handleSortChange(e.target.value)}
                 value={sortOptions}
-                className="bg-black text-white px-2 py-1 rounded-sm"
+                className="bg-blue-500 text-white px-2 py-1 rounded-sm"
               >
                 <option value="default">Default</option>
                 <option value="A-Z">A-Z</option>

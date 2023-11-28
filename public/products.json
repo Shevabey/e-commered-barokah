@@ -4,7 +4,7 @@
     "title": "Tabung Gas 3 Kg",
     "category": "Tabung Gas",
     "price": 21000,
-    "image": "./images/products/gasHijau.jpg",
+    "image": "/images/products/gasHijau.jpg",
     "status": "Terlaris",
     "description": "Tabung gas mini yang praktis untuk kebutuhan dapur dan memasak dengan  efisien."
   },
@@ -13,7 +13,7 @@
     "title": "Es Batu",
     "category": "Es",
     "price": 1500,
-    "image": "./images/products/esBatu.jpg",
+    "image": "/images/products/esBatu.jpg",
     "status": "Baru datang",
     "description": "Nikmati kesegaran minuman Anda dengan es batu segar dan memberikan sentuhan dingin pada minuman favorit Anda."
   },
@@ -22,7 +22,7 @@
     "title": "Tabung Gas 5,5 Kg",
     "category": "Tabung Gas",
     "price": 100000,
-    "image": "./images/products/gasPink.jpg",
+    "image": "/images/products/gasPink.jpg",
     "status": "Baru Datang",
     "description": " Tabung gas dengan kapasitas lebih besar cocok untuk kebutuhan dapur sehari-hari yang memerlukan pasokan gas yang tahan lama."
   },
@@ -31,16 +31,17 @@
     "title": "Galon Mineral",
     "category": "Galon Isi Ulang",
     "price": 5000,
-    "image": "./images/products/galonBiru.jpg",
+    "image": "/images/products/galonBiru.jpg",
     "status": "Terlaris",
-    "description": "Galon isi ulang dengan air mineral berkualitas tinggi. Cocok untuk memenuhi kebutuhan air minum harian keluarga Anda, Antar Galon (+ Rp.1000)."
+    "description": "Galon isi ulang dengan air mineral berkualitas tinggi. Cocok untuk memenuhi kebutuhan air minum harian keluarga Anda.",
+    "notice": " Antar Galon +Rp. 1000"
   },
   {
     "id": 5,
     "title": "Ikan Lele",
     "category": "Ikan",
     "price": 28000,
-    "image": "./images/products/lele.jpg",
+    "image": "/images/products/lele.jpg",
     "status": "Terlaris",
     "description": "Ikan Lele cocok untuk diolah menjadi hidangan lezat sesuai selera Anda. Jaminan kualitas dan kebersihan untuk memastikan hidangan yang nikmat."
   },
@@ -49,8 +50,11 @@
     "title": "Galon RO",
     "category": "Galon Isi Ulang",
     "price": 8000,
-    "image": "./images/products/galonMerah.jpg",
+    "image": "/images/products/galonMerah.jpg",
     "status": "Terlaris",
-    "description":"Galon isi ulang dengan air RO yang bersih dan segar. Memberikan kualitas air tinggi untuk memenuhi kebutuhan hidrasi sehari-hari Anda. Antar Galon (+ Rp.1000)."
+    "description": "Galon isi ulang dengan air RO yang bersih dan segar. Memberikan kualitas air tinggi untuk memenuhi kebutuhan hidrasi sehari-hari Anda.",
+    "notice": " Antar Galon +Rp. 1000"
+
+
   }
 ]
