@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -11,25 +11,25 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    // Setelah komponen dimuat, atur animasi logo
-    setIsLogoAnimated(true);
+  // useEffect(() => {
+  //   // Setelah komponen dimuat, atur animasi logo
+  //   setIsLogoAnimated(true);
 
-    // Hapus animasi setelah beberapa detik (misalnya, 3 detik)
-    const timeoutId = setTimeout(() => {
-      setIsLogoAnimated(false);
-    }, 3000);
+  //   // Hapus animasi setelah beberapa detik (misalnya, 3 detik)
+  //   const timeoutId = setTimeout(() => {
+  //     setIsLogoAnimated(false);
+  //   }, 3000);
 
-    // Bersihkan efek setelah komponen di-unmount
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  //   // Bersihkan efek setelah komponen di-unmount
+  //   return () => {
+  //     clearTimeout(timeoutId);
+  //   };
+  // }, []);
 
   const navItems = [
-    { title: "Home", path: "/" },
-    { title: "Products", path: "/products" },
-    { title: "Contact", path: "/contact" },
+    { title: "Beranda", path: "/" },
+    { title: "Produk", path: "/products" },
+    { title: "Kontak", path: "/contact" },
   ];
 
   return (
@@ -53,12 +53,14 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Category Product */}
+        {/* Nav item */}
         <nav className="hidden lg:flex items-center ml-auto">
           <ul className="lg:flex justify-between items-center gap-4 text-black">
             {navItems.map(({ title, path }) => (
               <li key={title} className="hover:text-blue-500">
-                <Link to={path}>{title}</Link>
+                <Link 
+                to={path} 
+                >{title}</Link>
               </li>
             ))}
           </ul>
