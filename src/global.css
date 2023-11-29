@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 } */
 
-@keyframes logoAnimation {
+/* @keyframes logoAnimation {
     0% {
       transform: scale(1);
     }
@@ -23,7 +23,7 @@
   .animate-logo {
     animation: logoAnimation 3s ease-in-out;
   }
-  
+   */
 
   @keyframes moveUpDown {
     0% {

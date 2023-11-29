@@ -14,7 +14,6 @@ const Cards = ({ filteredItems }) => {
       {filteredItems.slice(0, 8).map((item) => (
         <div key={item.id} className="card shadow-2xl">
           <Link to={`/shop/${item.id}`}>
-            {/* <Link to={`/shop/${item.id}`} onClick={() => console.log(`Clicked Link: /shop/${item.id}`)}> */}
             <img
               src={item.image}
               alt="item"
@@ -41,10 +40,10 @@ const Cards = ({ filteredItems }) => {
             >
               <FaWhatsapp /> Pesan
             </a>
-            <Link to={`/shop/${item.id}`}>
-              <a className="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-offset-2 focus:ring-blue-500 gap-2">
+            <Link to={`/shop/${item.id}`}className="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-offset-2 focus:ring-blue-500 gap-2">
+               
                 <FaInfo /> Info
-              </a>
+              
             </Link>
           </div>
         </div>
