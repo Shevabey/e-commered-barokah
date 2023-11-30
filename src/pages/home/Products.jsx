@@ -70,12 +70,12 @@ const Products = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 mb-12">
+    <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 mb-12 mt-10">
       <h2 className="title">Produk Kami</h2>
 
       {/* product card */}
       <div>
-        <div className="flex flex-col md:flex-row flex-wrap md:justify-between items-center space-x-3 mb-8">
+        <div className="flex flex-col md:flex-row flex-wrap md:justify-between items-center space-x-3 mb-8 mt-20">
           {/* all btn */}
           <div className="flex flex-row justify-start md:items-center md:gap-4 gap-4 flex-wrap ">
             <button onClick={showAll} className="btnProduct">

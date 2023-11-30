@@ -28,9 +28,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto my-8 p-8 bg-gray-100">
+    <div className="container mx-auto my-8 p-8 mt-4 bg-gray-100">
       <h2 className="title">Kontak Kami</h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap mt-20">
         {/* Map Shop */}
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
           <h2 className="text-2xl font-semibold mb-4">Lokasi Toko</h2>

@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     // <header className={`absolute max-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0 ${isLogoAnimated ? 'animate-logo' : ''}`}>
-    <header className= "absolute max-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0">
+    <header className= "bg-slate-100 shadow-md absolute min-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0">
       <div className="flex justify-between items-center container md:py-4 pt-6 pb-3">
         {/* Logo */}
         <Link to="/" className="flex items-center font-bold">
