@@ -12,7 +12,12 @@ const Cards = ({ filteredItems }) => {
   return (
     <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center gap-12 ">
       {filteredItems.slice(0, 8).map((item) => (
-        <div key={item.id} className="card shadow-2xl">
+        <div
+          key={item.id}
+          className="card shadow-2xl"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <Link to={`/shop/${item.id}`}>
             <img
               src={item.image}
@@ -40,10 +45,11 @@ const Cards = ({ filteredItems }) => {
             >
               <FaWhatsapp /> Pesan
             </a>
-            <Link to={`/shop/${item.id}`}className="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-offset-2 focus:ring-blue-500 gap-2">
-               
-                <FaInfo /> Info
-              
+            <Link
+              to={`/shop/${item.id}`}
+              className="flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-xl text-white bg-blue-500 hover:bg-blue-600 focus:ring-offset-2 focus:ring-blue-500 gap-2"
+            >
+              <FaInfo /> Info
             </Link>
           </div>
         </div>

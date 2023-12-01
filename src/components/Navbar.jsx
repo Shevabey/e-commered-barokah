@@ -11,21 +11,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // useEffect(() => {
-  //   // Setelah komponen dimuat, atur animasi logo
-  //   setIsLogoAnimated(true);
-
-  //   // Hapus animasi setelah beberapa detik (misalnya, 3 detik)
-  //   const timeoutId = setTimeout(() => {
-  //     setIsLogoAnimated(false);
-  //   }, 3000);
-
-  //   // Bersihkan efek setelah komponen di-unmount
-  //   return () => {
-  //     clearTimeout(timeoutId);
-  //   };
-  // }, []);
-
   const navItems = [
     { title: "Beranda", path: "/" },
     { title: "Produk", path: "/products" },
@@ -34,10 +19,14 @@ const Navbar = () => {
 
   return (
     // <header className={`absolute max-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0 ${isLogoAnimated ? 'animate-logo' : ''}`}>
-    <header className= "bg-slate-100 shadow-md absolute min-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0">
+    <header className="bg-slate-100 shadow-md absolute min-w-screen-2xl xl:px-28 px-4 top-0 right-0 left-0">
       <div className="flex justify-between items-center container md:py-4 pt-6 pb-3">
         {/* Logo */}
-        <Link to="/" className="flex items-center font-bold">
+        <Link
+          to="/"
+          className="flex items-center font-bold"
+          data-aos="fade-down-right"
+        >
           <img src={logo} alt="logo" width={80} />
           <h1 className="hover:text-blue-500 text-xl">Toko Barokah</h1>
         </Link>
@@ -54,13 +43,14 @@ const Navbar = () => {
         </div>
 
         {/* Nav item */}
-        <nav className="hidden lg:flex items-center ml-auto">
+        <nav
+          className="hidden lg:flex items-center ml-auto"
+          data-aos="fade-down-left"
+        >
           <ul className="lg:flex justify-between items-center gap-4 text-black">
             {navItems.map(({ title, path }) => (
               <li key={title} className="hover:text-blue-500">
-                <Link 
-                to={path} 
-                >{title}</Link>
+                <Link to={path}>{title}</Link>
               </li>
             ))}
           </ul>
@@ -77,7 +67,10 @@ const Navbar = () => {
           </div>
           <ul className="text-white px-4">
             {navItems.map(({ title, path }) => (
-              <li key={title} className="hover:text-blue-500 my-5 cursor-pointer">
+              <li
+                key={title}
+                className="hover:text-blue-500 my-5 cursor-pointer"
+              >
                 <Link to={path} onClick={toggleMenu}>
                   {title}
                 </Link>

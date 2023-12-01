@@ -75,7 +75,12 @@ const Products = () => {
 
       {/* product card */}
       <div>
-        <div className="flex flex-col md:flex-row flex-wrap md:justify-between items-center space-x-3 mb-8 mt-20">
+        <div
+          className="flex flex-col md:flex-row flex-wrap md:justify-between items-center space-x-3 mb-8 mt-20"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           {/* all btn */}
           <div className="flex flex-row justify-start md:items-center md:gap-4 gap-4 flex-wrap ">
             <button onClick={showAll} className="btnProduct">

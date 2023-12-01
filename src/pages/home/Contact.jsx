@@ -32,7 +32,7 @@ const Contact = () => {
       <h2 className="title">Kontak Kami</h2>
       <div className="flex flex-wrap mt-20">
         {/* Map Shop */}
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0" data-aos="zoom-in-right">
           <h2 className="text-2xl font-semibold mb-4">Lokasi Toko</h2>
           <iframe
             title="Google Maps"
@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
 
         {/* Form Criticism and suggestions */}
-        <div className="w-full md:w-1/2 md:pl-6">
+        <div className="w-full md:w-1/2 md:pl-6" data-aos="zoom-in-left">
           <h2 className="text-2xl font-semibold mb-4">Kritik dan Saran</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">

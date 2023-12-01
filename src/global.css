@@ -4,39 +4,39 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
 
-/* body{
-    font-family: 'Roboto', sans-serif;
-} */
+body {
+  --sb-track-color: #dcdcdc;
+  --sb-thumb-color: #0098ff;
+  --sb-size: 10px;
 
-/* @keyframes logoAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .animate-logo {
-    animation: logoAnimation 3s ease-in-out;
-  }
-   */
-
-
-   
-.title{
-  @apply text-3xl font-semibold capitalize text-center my-8
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
-.btnProduct{
-  @apply hover:bg-blue-500 hover:text-white p-1 rounded-md
+body::-webkit-scrollbar {
+  width: var(--sb-size);
 }
 
-.btnPrimary{
-  @apply inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-500 hover:bg-blue-600  focus:ring-offset-2 focus:ring-blue-500 gap-2
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 13px;
+  border: 1px solid #efefef;
+}
+
+.title {
+  @apply text-3xl font-semibold capitalize text-center my-8;
+}
+
+.btnProduct {
+  @apply hover:bg-blue-500 hover:text-white p-1 rounded-md;
+}
+
+.btnPrimary {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-500 hover:bg-blue-600  focus:ring-offset-2 focus:ring-blue-500 gap-2;
 }
 
 .card {
@@ -44,4 +44,3 @@
   padding: 10px;
   text-align: center;
 }
-
