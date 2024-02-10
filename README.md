@@ -1,5 +1,7 @@
 
 # E-Commered Barokah
+<img width="949" alt="image" src="https://github.com/Shevabey/e-commered-barokah/assets/120761224/9ed7ad14-e793-4d84-b670-d69efa2d6912">
+
 
 This project aims to create an online shop platform called "Toko Barokah". This shop provides various products with a touch of beauty and the best quality. With this online shop platform, users can browse and buy products easily and provide solutions to shop position buyers.
 
